@@ -12,6 +12,15 @@ body {
 }
 a {
     text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+}
+
+a:hover {
+    background-size: 100% 2px;
 }
 .wrapper {
     max-width: 1000px;
@@ -155,7 +164,7 @@ a {
 .highlights-list__paragraph > a:hover {
     background-size: 100% 2px;
 }
-.image{
+.image {
     margin: 100px 0 210px 0px;
    text-align: center;
 }
@@ -216,8 +225,109 @@ a {
 .images-element {
     justify-content: space-between;
 }
+
+.table-info {
+    color: #fff;
+    background-color: #1D3557;
+    padding: 100px 0 100px 0;
+}
+.table-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px 10px 5px 5px;
+    background-color: #23416A;
+}
+.table-header__left {
+    display: flex;
+    flex-direction: flex;
+}
+.header-left__text {
+    margin-left: 10px;
+}
+.header-left__heading {
+    font-size: 24px;
+    padding-bottom: 5px;
+}
+.header-left__par {
+    color: gray;
+}
+.table-header__right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.header-popularity__title {
+    padding-bottom: 10px;
+}
+.header-winrate__title {
+    padding-left: 10px; 
+    padding-bottom: 10px;
+    color: #E63946;
+}
+.header-popularity__par {
+    color: gray;
+}
+.header-winrate__par {
+    padding-left: 10px;
+    color: gray;
+}
+.tables {
+    margin: 50px 0 50px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.table-space {
+    padding-right: 30px;
+}
+.table-space:nth-child(even) {
+    padding-right: 0px;
+    padding-left: 30px;
+}
+table {
+    background-color: #23416A;
+}
+.table-heading {
+    font-size: 16px;
+    background-color: #1D3557;
+}
+thead, tbody {
+    font-size: 14px;
+}
+thead > tr {
+    border-bottom: 8px solid transparent;
+    text-align: start; 
+}
+td, th {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 5px;
+    padding-right: 40px;
+}
+tr:nth-child(odd) {
+    background-color: #23416A;
+}
+tr:nth-child(even) {
+    background-color: #1D3557;
+}
+.disadvantage-bar, .winrate-bar, .advantage-bar{
+    border-bottom: 3px solid; 
+}
+.winrate-bar {
+    border-bottom-color: #a9cf54;
+}
+.disadvantage-percent, .winrate-percent, .advantage-percent {
+    padding-bottom: 5px;
+}
+.image-bottom {
+    margin: 100px 0 100px 0px;
+   text-align: center;
+}
+.image-bottom > img {
+    opacity: .25;
+}
 .footer-info {
-    padding: 100px 0 50px 0;
+    padding: 0px 0 50px 0;
     color: #FFFFFF;
     display: flex;
     justify-content: center;
